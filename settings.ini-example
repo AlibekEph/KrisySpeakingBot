@@ -1,0 +1,18 @@
+# settings.ini-example
+# Copy this file to settings.ini and fill in your values
+
+[telegram]
+# Your Telegram bot token from @BotFather
+token = YOUR_TELEGRAM_BOT_TOKEN
+
+[llm]
+# URL of your LLM API endpoint
+url = http://your-llm-api-endpoint:port/api/generate
+# Model name to use
+model = your-model-name
+
+[logging]
+# Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+level = INFO
+# Log file path
+file = bot.log 

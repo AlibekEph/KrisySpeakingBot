@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram_bot
+    volumes:
+      - ./app:/app/app
+      - ./settings.ini:/app/settings.ini
+      - ./requirements.txt:/app/requirements.txt
+    restart: unless-stopped
